@@ -11,7 +11,7 @@ import(
 
 // connect with db
 func main()  {
-  db, err := sql.Open("mysql", "login:password@tcp(127.0.0.1:8889))/db_name")
+  db, err := sql.Open("mysql", "login:password@tcp(127.0.0.1:8889)/db_name")
   if err != nil {
     panic(err)
   }
